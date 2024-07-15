@@ -52,6 +52,9 @@ nav a {
     color: var(--color-light-gray);
     margin-left: 4%;
 }
+#Himg {
+  display: block;
+}
 
 /* ----- fondo ------*/
 canvas { 
@@ -99,6 +102,7 @@ canvas {
     align-items: center;
 }
 #information #img {
+    display: block;
     width: 100%;
     margin-right: 10%;
 }
@@ -145,10 +149,6 @@ canvas {
     color: white;
 }
 
-/* icons +/
-/*
-    Auther: Abdelrhman Said
-*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -260,4 +260,31 @@ canvas {
 .wrapper .youtube:hover .tooltip::before {
   background: #CD201F;
   color: #ffffff;
+}
+@media (max-width: 700px) {
+  #information #img {
+    display: none;
+  }
+  #Himg {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header nav a {
+    margin: 0.5em 0;
+  }
+}
+@media (max-width: 450px) {
+  #overlay-text {
+    font-size: 4em;
+}
 }
